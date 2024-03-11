@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        .FAQQue{
+            background-color: lightcoral;
+            padding:20px;
+            margin:10px;
+            border-radius: 10px;
+            width:950px;
+            font-size: 1.2rem;
+            font-family:  'Protest Riot', sans-serif;
+        }
+        .FAQANS{
+            background-color:lightseagreen;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            padding:20px;
+            margin: 10px;
+            font-family: 'Protest Riot', sans-serif ;
+            display: none;
+        }
+        #div1:hover{
+            #Ans1{
+                display: block;
+            }
+        }
+        #div2:hover{
+            #Ans2{
+                display: block;
+            }
+        }
+        #div3:hover{
+            #Ans3{
+                display: block;
+            }
+        }
+        #form{
+            width:450px;
+            height: 300px;
+            background-color: #027568;
+            padding: 10px;
+            font-size: 2rem;
+        }
+        .myinput{
+           height: 30px;
+           width:400px;
+        }   
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/FAQ.png" width="1280px" height="500px">
+    </div>
+    <br>
+    <div id="FAQ">
+        <div id="div1">
+            <div class="FAQQue" id="Que1">
+                Q. What are common FAQs?
+            </div>
+            <br>
+            <div class="FAQANS" id="Ans1">
+                A. Common FAQs (Frequently Asked Questions) can vary depending on the product, service, or industry. 
+            </div>
+        </div>
+        <br>
+        <div id="div2">
+            <div class="FAQQue" id="Que2">
+                Q. What is General FAQ?
+            </div>
+            <br>
+            <div class="FAQANS" id="Ans2">
+                A. It is a collection of common questions and answers not specific to a product, feature, or service. They usually cover payment policies, how to contact customer support, and refund policies.
+            </div>
+        </div>
+        <br>
+        <div id="div3">
+            <div class="FAQQue" id="Que3">
+                Q. What is the frequently asked questions feature?
+            </div>
+            <br>
+            <div class="FAQANS" id="Ans3">
+                A. An FAQ (Frequently Asked Questions) page is a key part of a knowledge base because it addresses the most common questions customers have and is useful to customers at all stages of the customer journey. FAQs start with a question and then answer it concisely.
+            </div>
+        </div>
+    </div>
+    <br>
+    <div align="center">
+        <div id="form">
+            <form action="">
+                <div class="form-group" align="left">
+                     <label for="">
+                          Enter your Title
+                     </label>
+                     <br>
+                     <input type="title" class="myinput" placeholder="Enter your title " required name="title">
+                </div>
+                <br>
+                <div class="form-group" align="left">
+                    <label for="">
+                         Enter your Message
+                    </label>
+                    <br>
+                    <textarea name="message" id="" cols="55" rows="8" class="textarea" required></textarea>
+               </div>
+           </form>
+        </div>
+    </div>
+</body>
+</html>

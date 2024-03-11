@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <style>
+        nav{
+        color:black;
+        display:flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        font-size: 20px;
+       }
+       nav h1{
+        font-size: 40px;
+        color:coral;
+        border-bottom: 5px solid rgb(162, 240, 162);
+        border-radius: 10px;
+       }
+       ul{
+        display: flex;
+       }
+       ul li{
+        list-style: none;
+        margin-inline: 30px;
+       }
+    </style>
+</head>
+<body>
+    <form action="lesson9.html" method="post">
+    <nav>
+        <h1>Foodio</h1>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Order</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+   </nav>      
+    <table>
+        <tr>
+            <td align="center">
+                <img src="images/register banner page.jpg" width="1280px" height="500px">
+            </td>
+        </tr>
+    </table>
+    <table width="100%">
+        <tr width="100%">
+            <td width="100%" colspan="8">
+                 <table width="100%">
+                      <tr>
+                        <td width="60%">
+                            <table width="100%" border="2" align="margin-left" cellpadding="5">
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <h2>Register</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="username">
+                                            First name
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="username" id="username" placeholder="Enter your name" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="username">
+                                            Last name
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="username" id="username" placeholder="Enter your name" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="email">
+                                             Email address
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="password">
+                                             Password
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="password" name="password" id="password" placeholder="Password Goes here" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="contact">
+                                             Mobile Number
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" name="contact" id="contact" placeholder="Mobile number Goes here" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="dob">
+                                               Date of birth
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="date" name="dob" id="dob" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                         gender
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="gender" value="1" id="male"><label for="male">Male</label>
+                                        <input type="radio" name="gender" value="0" id="female"><label for="female">Female</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="address">
+                                            Enter your address
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <textarea name="address" id="address" cols="30" rows="2"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <a href="lesson9.html"></a><input type="submit" name="btn_submit" value="Register">
+                                        <input type="reset" name="btn_submit" value="Clear All">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="40%" align="center">
+                            <table width="100%" align="center">
+                                 <tr>
+                                    <td>
+                                        <img src="images/register page.png" height="420px">
+                                    </td>
+                                  </tr>
+                            </table>
+                        </td>  
+                      </tr>
+                 </table>
+            </td>        
+        </tr>
+    </table>           
+</body>
+</html>

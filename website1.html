@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtual Art Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/website1.css">
+</head>
+<body>
+    <div id="menu">
+        <div id="menu_logo">
+            <!--logo-->
+            <img src="images/logo1.jpg" id="logo_image" alt="">
+            <span id="logo_text" class="animate__animated animate__backInLeft"><i>Digital Palettes</i></span>
+        </div>
+        <div class="animate__animated animate__backInLeft" id="menu_links">
+            <!--links-->
+            <a href="#about_us">About us</a>
+            <a href="#popular_section">Paintings</a>
+            <a href="#artist">Artist</a>
+            <a href="#contact_us">Contact us</a>
+        </div>
+    </div>   
+    <div id="banner_section">
+        <div>
+            <!--main-->
+            <img src="images/background1.jpg" class="animate__animated animate__backInDown" id="banner1" alt="">
+        </div>
+        <div>
+            <!--sub-->
+            <img src="images/background2.jpg" class="banner2 animate__animated animate__backInDown"  alt="">
+            <img src="images/background3.jpg"  id="banner2_2" class="banner2 animate__animated animate__backInDown" alt="">
+        </div>
+    </div>
+    <div id="about_us">
+        <div id="about_heading_container" data-aos="fade-up-right" data-aos-duration="3000">
+            <span class="aboutus_heading">
+                About
+            </span>
+            <br>
+            <span class="aboutus_heading" id="head2">
+                Digital Palettes
+            </span>
+        </div>
+        <div id="aboutus_content" data-aos="fade-down-left" data-aos-duration="3000">
+            <div id="aboutus_text">
+                <!--text-->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim eaque ipsum voluptatem officia architecto quasi culpa dignissimos esse, quibusdam reiciendis quaerat dolores adipisci recusandae quod commodi ducimus libero accusamus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nobis magni ducimus enim iure, ea accusamus! Eum vel accusamus quidem, delectus eveniet quibusdam temporibus qui sed ipsum, velit voluptates possimus!
+            </div>
+            <div id="aboutus_image">
+                <!--logo-->
+                <img src="images/logo1.jpg" id="about_image1" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="popular_section" data-aos="fade-right" data-aos-duration="3000">
+        <h1 class="popular_heading">
+            Popular Paintings
+        </h1>
+        <div id="popular_container">
+            <div>
+                <img src="images/background1.jpg" class="popular_images" alt="">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, adipisci!
+            </div>
+            <div>
+                <img src="images/background2.jpg" class="popular_images" alt="">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, adipisci!
+            </div>
+            <div>
+                <img src="images/background3.jpg" class="popular_images" alt="">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, adipisci!
+            </div>
+        </div>
+    </div>
+    <div id="artist">
+        <h1 id="artist_heading">
+            Popular Artist
+        </h1>
+        <div id="parent_artist">
+            <div id="div1" data-aos="flip-left" data-aos-duration="3000">
+                <div class="child_artist" id="painter1">
+                    <!--<img src="images/painter1.jpg" alt="">-->
+                    <!--artist 1-->
+                </div>
+                <div align="center" class="artist_name" id="name1">
+                    jeff koons
+                </div>
+            </div>
+            <div id="div2" data-aos="flip-up" data-aos-duration="3000">
+                <div class="child_artist" id="painter2">
+                    <!--<img src="images/painter2.png" alt="">-->
+                    <!--artist 2-->
+                </div>
+                <div align="center" class="artist_name" id="name2">
+                    Amselm kiefer
+                </div>
+            </div>
+            <div id="div3" data-aos="flip-right" data-aos-duration="3000">
+                <div class="child_artist" id="painter3">
+                    <!--<img src="images/painter3.jpg" alt="">-->
+                    <!--artist 3-->
+                </div>
+                <div align="center" class="artist_name" id="name3">
+                    Damein hirst
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 id="contact_heading">
+        Contact us
+    </h1>
+    <div id="contact_us">
+        <div data-aos="fade-right" data-aos-duration="3000">
+            <!--form-->
+            <div id="form">
+                <form action="">
+                    <div class="form-group">
+                         <label for="">
+                              Enter your email
+                         </label>
+                         <br>
+                         <input type="email" class="myinput" placeholder="Enter your email " required name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">
+                             Enter your Message
+                        </label>
+                        <br>
+                        <textarea name="message" id="" cols="55" rows="8" class="textarea" required></textarea>
+                   </div>
+                   <div class="buttons">
+                    <button class="button-30" role="button" type="reset">Clear</button>
+                    <button class="button-30" type="submit" role="button">Submit</button>
+                   </div> 
+               </form>
+            </div>
+        </div>
+        <div ata-aos="fade-left" data-aos-duration="3000">
+            <!--map-->
+            <iframe width="550" height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=71.8275833129883%2C21.70719711328147%2C72.21073150634767%2C21.89399562866818&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=12/21.8006/72.0192">View Larger Map</a></small>
+        </div>
+    </div>
+    <div id="footer">
+        <hr>
+        <div class="footer_text" align="center">
+             <a class="footer_link" href="https://github.com/parampatel07/frontend32" target="_blank">
+                  Copyright by frontend 32</a>
+        </div>
+   </div>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+</body>
+</html>
