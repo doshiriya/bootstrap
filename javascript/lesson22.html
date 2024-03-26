@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2"> 
+                <div class="card shadow mt-5 p-2">
+                    <div class="card-body">
+                        <div class="d-flex" id="maindiv">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var name = (prompt("Enter product name"));
+        var price = (prompt("Enter product price"));
+        var discount = (prompt("Enter product Discount"));
+        var maindiv = ` <div class="col-lg-6 offset-1">
+                                <div>
+                                    <h1><span id="name"></span></h1>
+                                </div>
+                                <div class="mt-3">
+                                    <img src="https://picsum.photos/300/300" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 mt-5 pt-5"> 
+                                <div>
+                                    <h4>Price<span class="badge text-bg-success " id="price"> </span></h4>
+                                </div>
+                                <div>
+                                    <h3>Discount<span class="badge text-bg-primary " id="discount"> </span></h3>
+                                </div>
+                                <div class="mt-3">
+                                    <button type="button" class="btn btn-success" id="btnAddToCart">Add to cart</button>
+                                    <button type="button" class="btn btn-warning" id="btnBuyNow">Buy Now</button>
+                                </div>
+                            </div> `
+                            document.getElementById("maindiv").innerHTML = maindiv;
+                            document.getElementById("name").innerHTML = name;
+                            document.getElementById("price").innerHTML = price;
+                            document.getElementById("discount").innerHTML = discount;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
