@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <!-- write a program 1 to 20 number in armstrong number. -->
+    <script>
+        var number = parseInt(prompt("Enter any number"));
+
+        // var number = ` `;
+        var sum = 0;
+        var digit=0;
+        var temp = number;
+          while(temp > 0)
+          {
+            digit = temp % 10;
+            sum += digit ** 3;
+            temp = parseInt(temp / 10);
+          }
+        
+        if(sum == number)
+        {
+            document.write(`Number is armstrong number: ${number}`);
+        }
+        else
+        {
+            document.write(`Number is not armstrong number: ${number}`);
+        }
+    </script>
+  </body>
+</html>

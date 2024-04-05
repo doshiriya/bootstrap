@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+</head>
+
+<body>
+    <!-- write a program 1 to 20 number in armstrong number. -->
+    <script>
+        var start = parseInt(prompt("Enter the first number"));
+        var last = parseInt(prompt("Enter the last number"));
+        var i;
+        var r;
+        for(i=start; i<=last; i++)
+        {
+            var sum = 0;
+            var temp = i;
+            while(temp>0)
+            {
+                r = temp % 10;
+                sum += r ** 3;
+                temp = parseInt(temp/10);
+            }
+            if(sum==i)
+            {
+                document.write(` `+ i );
+            }
+        }
+    </script>
+</body>
+
+</html>
