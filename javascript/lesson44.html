@@ -35,9 +35,9 @@
                                 placeholder="Enter your password" required>
                         </div>
                         <div class="text-center mt-3">
-                            <button onclick="StudentLogin()" type="submit" class="btn btn-success">Student
+                            <button onclick="StudentLogin()" type="button" class="btn btn-success">Student
                                 Login</button>
-                            <button onclick="TeacherLogin()" type="submit" class="btn btn-primary">Teacher Login</button>
+                            <button onclick="TeacherLogin()" type="button" class="btn btn-primary">Teacher Login</button>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
             {
                 document.getElementById("errormsg").innerHTML = '';
                 alert = `<div class="alert alert-success alert-dismissible fade show" role="alert"> <img
-                                src="images/verified.gif" height="20px" alt="icon">
+                                src="../images/verified.gif" height="20px" alt="icon">
                             <strong>Student Login Successfully.</strong> Welcome to Login Form.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div> `
@@ -100,7 +100,7 @@
             {
                 document.getElementById("loginmsg").innerHTML = '';
                 alert = `<div class="alert alert-danger alert-dismissible fade show" role="alert"> <img
-                                src="images/cancel.png" height="20px" alt="icon">
+                                src="../images/cancel.png" height="20px" alt="icon">
                             <strong>Error!</strong> Incorrect email or password. Please try again.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>`
@@ -154,7 +154,7 @@
             {
                 document.getElementById("errormsg").innerHTML = '';
                 alert = `<div class="alert alert-success alert-dismissible fade show" role="alert"> <img
-                                src="images/verified.gif" height="20px" alt="icon">
+                                src="../images/verified.gif" height="20px" alt="icon">
                             <strong>Teacher Login Successfully.</strong> Welcome to Login Form.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div> `
@@ -164,7 +164,7 @@
             {
                 document.getElementById("loginmsg").innerHTML = '';
                 alert = `<div class="alert alert-danger alert-dismissible fade show" role="alert"> <img
-                                src="images/cancel.png" height="20px" alt="icon">
+                                src="../images/cancel.png" height="20px" alt="icon">
                             <strong>Error!</strong> Incorrect email or password. Please try again.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>`
