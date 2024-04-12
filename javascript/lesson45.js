@@ -1,45 +1,59 @@
 //function expression ( 2nd method )
 
-var getInput = function()
-{
+var getInput = function () {
     var foot = parseInt(document.getElementById('foot').value);
     var inch = parseInt(document.getElementById('inch').value);
     var weight = parseFloat(document.getElementById('weight').value);
     var answer = [foot, inch, weight]
-    console.log(`the value of foot is ${foot} inch is ${inch} and weight is ${weight}`);
-
+    console.log(` the value of foot is ${foot} inch is ${inch} and weight is ${weight} `);
+    // var meter = foot / 3.281 ;
+    //  footToMeter(foot);
+    //  inchToMeter(inch);
+    //  getTotalMeter(foot, inch);
+    //  getBmi(weight, foot, inch);
     return answer;
-};
-
-var footToMeter = function()
-{
-    var answer2 = getInput();
-    console.log(answer2);
-    var foot_meter = answer2[0] / 3.281;
-    console.log(`foot to meter: ${foot_meter} `);
 }
-footToMeter();
 
-var inchToMeter = function()
-{
-    var answer3 = getInput();
-    console.log(answer3);
-    var inch_meter = answer3[1] / 39.37;
-    console.log(`Inch to meter: ${inch_meter} `);
+var getBmi = function () {
+    var input = getInput();
+    var bmi = input[2] / (getTotalMeter(input[0], input[1]) * getTotalMeter(input[0], input[1]));
+    console.log("the value of bmi is " + bmi);
+    
+    var image = "";
+    if (bmi < 18.5) {
+        image = ` <img src="../images/underweight.png" height="250px" alt="" >`;
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        image = ` <img src="../images/normalweight.png" height="250px" alt="" >`;
+    }
+    else if (bmi >= 25 && bmi <= 29.9) {
+        image = `<img src="../images/overweight.png" height="250px" alt="">`;
+    }
+    else if(bmi >= 30 && bmi <= 34.9)
+    {
+        image = `<img src="../images/obesity1.png" height="250px" alt="">`;
+    }
+    else if(bmi >=35)
+    {
+        image = `<img src="../images/obesity2.png" height="250px" alt="">`;
+    }
+    document.getElementById("image").innerHTML = image;
+    return bmi;
 }
-inchToMeter();
 
-var getBmi = function()
-{
-    var answer4 = getInput();
-    console.log(answer4);
-    var weight = answer4[2] ;
-    var meter = 0 ;
-    var foot_meter = answer4[0] / 3.281;
-    var inch_meter = answer4[1] / 39.37;
-    meter = foot_meter + inch_meter;
-    console.log(meter);
-    var bmi = weight / (meter * meter);
-    console.log(bmi);
+var getTotalMeter = function (foot, inch) {
+    var total_meter = footToMeter(foot) + inchToMeter(inch);
+    console.log("Total meter is : " + total_meter);
+    return total_meter;
 }
-getBmi();
+
+var footToMeter = function (foot) {
+    var foot_meter = foot / 3.281;
+    console.log("This is foot meter " + foot_meter);
+    return foot_meter;
+}
+
+var inchToMeter = function (inch) {
+    var inch_meter = inch / 39.37;
+    console.log("This is inch meter " + inch_meter);
+    return inch_meter;
+}
